@@ -1,7 +1,12 @@
 #range
 # python 內建功能:清單產生器
 import random
-r = random.randint(1, 1000) #產生隨機的整數1至100
+start = input('請輸入隨機數字範圍起始值: ')
+end = input('請輸入隨機數字範圍結束值: ')
+start = int(start) #casting型別轉換
+end = int(end)
+
+r = random.randint(start, end) #產生隨機的整數1至100
 count = 0
 while True:
 	count += 1
